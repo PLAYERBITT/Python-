@@ -1,10 +1,10 @@
-# Travis CI Project: RAGNAROK Integration  
+# Travis CI Project: JUPITER Integration  
 
 ## Project Description  
-This project demonstrates how to use **Travis CI** to automate the testing and execution of a binary file (`RAGNAROK`) alongside a Python script (`ko.py`). The repository is designed for educational purposes, particularly for school projects or small-scale demonstrations of CI/CD pipelines. It highlights the importance of automation in ensuring consistent and reliable execution across different environments.  
+This project demonstrates how to use **Travis CI** to automate the testing and execution of a binary file (`JUPITER`) alongside a Python script (`ko.py`). The repository is designed for educational purposes, particularly for school projects or small-scale demonstrations of CI/CD pipelines. It highlights the importance of automation in ensuring consistent and reliable execution across different environments.  
 
 ## Files  
-- **RAGNAROK**: A precompiled binary file that forms the core of this project.  
+- **JUPITER**: A precompiled binary file that forms the core of this project.  
 - **ko.py**: A Python script that interacts with or complements the functionality of the binary.  
 - **.travis.yml**: Travis CI configuration file that defines the build and test process.  
 
@@ -20,7 +20,7 @@ The Travis CI pipeline, configured via the `.travis.yml` file, is structured as 
    - Ensure the environment is prepared to execute the binary file.  
 
 2. **Execution Stage**  
-   - Run the `RAGNAROK` binary file and capture its output.  
+   - Run the `JUPITER` binary file and capture its output.  
    - Execute the `ko.py` script to verify its functionality and ensure proper interaction with the binary.  
 
 3. **Testing and Validation**  
@@ -36,6 +36,6 @@ python:
   - "3.9"  # Specify Python version
 
 script:
-  - chmod +x RAGNAROK  # Ensure the binary is executable
-  - ./RAGNAROK  # Run the binary
-  - python RAGNAROK.py  # Execute the Python script
+  - chmod +x JUPITER  # Ensure the binary is executable
+  - ./JUPITER # Run the binary
+  - python ko.py  # Execute the Python script
